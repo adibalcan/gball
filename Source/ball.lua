@@ -36,8 +36,8 @@ function Ball:init(x, y)
 end
 
 function isWithinBounds(x, y)
-    -- Allow 30px margin beyond the 400x240 screen before stopping movement
-    local margin = 30
+    -- Allow 15px margin beyond the 400x240 screen before stopping movement
+    local margin = 15
     return x > -margin and x < 400 + margin and y > -margin and y < 240 + margin
 end
 
