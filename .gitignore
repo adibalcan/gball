@@ -1,0 +1,10 @@
+# Build output
+*.pdx/
+*.pdx.zip
+
+# macOS
+.DS_Store
+
+# IDE
+.nova/
+.vscode/

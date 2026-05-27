@@ -1,0 +1,7 @@
+name=GravityBall
+author=Adrian Balcan
+description=A basic ball game using gravity
+bundleID=com.feedcheck.GravityBall
+version=1.5
+buildNumber=106
+imagePath=SystemAssets
