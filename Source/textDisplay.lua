@@ -1,3 +1,5 @@
+-- HUD text rendering: draws status messages as a sprite in the top-left corner.
+
 local pd <const> = playdate
 local gfx <const> = pd.graphics
 
@@ -14,6 +16,7 @@ end
 function updateDisplay()
     local text = "Status: " ..status
     local textWidth, textHeight = gfx.getTextSize(text)
+    -- Render text to an offscreen image, then assign it to the sprite
     local textImage = gfx.image.new(textWidth, textHeight)
     gfx.pushContext(textImage)
         gfx.drawText(text, 0, 0)

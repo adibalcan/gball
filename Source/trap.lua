@@ -1,3 +1,5 @@
+-- Trap sprite: hitting one of these ends the game.
+
 import "CoreLibs/object"
 import "CoreLibs/graphics"
 import "CoreLibs/sprites"
@@ -12,6 +14,7 @@ function Trap:init(x, y)
     local ballImage = gfx.image.new("images/trap.png")
     self:setImage(ballImage)
 
+    -- Collision rect inset by 10px to require a more precise hit
     self:setCollideRect(10, 10, 10, 10)
     self:moveTo(x, y)
     self:add()
